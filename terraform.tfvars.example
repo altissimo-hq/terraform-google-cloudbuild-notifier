@@ -1,0 +1,6 @@
+bucket                = "bucket-name"
+filter                = "has(build.source)"
+project_id            = "project-id"
+region                = "us-central1""
+service_account       = "my-service-account@my-project.iam.gserviceaccount.com"
+slack_webhook_project = "my-secret-project"
