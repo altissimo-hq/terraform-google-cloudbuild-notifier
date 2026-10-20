@@ -42,13 +42,13 @@ This Terrform module currently relies on the PubSub Service Agent has the abilit
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_google"></a> [google](#requirement\_google) | >= 5.33.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_google"></a> [google](#provider\_google) | >= 5.33.0 |
 
 ## Modules
@@ -58,7 +58,7 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [google_cloud_run_service.cloud-build-slack-notifier](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloud_run_service) | resource |
 | [google_cloud_run_service_iam_member.cloud-build-slack-notifier-invoker](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloud_run_service_iam_member) | resource |
 | [google_pubsub_subscription.cloud-builds](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/pubsub_subscription) | resource |
@@ -74,7 +74,7 @@ No modules.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_bucket"></a> [bucket](#input\_bucket) | Google Storage Bucket continaing the Cloud Build Notifier configuration | `string` | n/a | yes |
 | <a name="input_create_bucket"></a> [create\_bucket](#input\_create\_bucket) | Create the Bucket. Defaults to true. | `bool` | `true` | no |
 | <a name="input_create_pubsub_topic"></a> [create\_pubsub\_topic](#input\_create\_pubsub\_topic) | Create the Pub/Sub Topic. Defaults to true. | `bool` | `true` | no |
@@ -96,7 +96,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_bucket"></a> [bucket](#output\_bucket) | Bucket used by this module |
 | <a name="output_pubsub_subscription"></a> [pubsub\_subscription](#output\_pubsub\_subscription) | Pub/Sub Subscription created by this module |
 | <a name="output_pubsub_topic"></a> [pubsub\_topic](#output\_pubsub\_topic) | Pub/Sub Topic used by this module |
